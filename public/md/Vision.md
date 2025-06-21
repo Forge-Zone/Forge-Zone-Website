@@ -18,7 +18,7 @@ else. **TLDR**:
 - we're not trying to be buildspace, we're trying to be forge zone
 - my dream
 
-if you don't know me I am [shrit](https://www.shrit.in/). founder of forge zone, if you don't know about forge zone then we're helping developers GTFOL (Get the f\*k of localhost), go the home page to learn more about us, but why?
+if you don't know me I am [shrit](https://www.shrit.in/). founder of forge zone, if you don't know about forge zone then we're helping developers GTFOL (Get the f\*k of localhost), go to the home page to learn more about us, but why?
 
 I've been into coding since I was [12](https://www.shrit.in/past).
 Back then, I wasn't chasing money or anything.
