@@ -3,7 +3,7 @@
 ![https://i.postimg.cc/HLHCGCzK/fig.gif](https://i.postimg.cc/HLHCGCzK/fig.gif)
 
 This is like a 10-minute read.
-Usually, I think being concise is far superior — but, in this case, I let myself just write and tell our story in a really raw way.
+Usually, I think being concise is far superior — but, in this case, I let myself just write and tell my story in a really raw way.
 
 So, if you want to dig into stuff like what we're gonna do what we're gonna do, and what's next then read on.
 

@@ -6,12 +6,12 @@ const VisionClient = () => {
   return (
     <div className="relative">
       <section
-        className="h-[60vh] w-full sm:fixed top-0 left-0 bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center [filter:sepia(0.2)] relative"
+        className="h-[60vh] w-full sm:fixed top-0 left-0 bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center [filter:sepia(0.2)] relative bg-black/80"
         style={{
           backgroundImage: `url('https://i.postimg.cc/gkzCKP4k/image.png')`,
         }}
       >
-        <div className="absolute inset-0 bg-black/10 backdrop-blur-[0.5px]"></div>
+        <div className="absolute inset-0 bg-black/30 backdrop-blur-[2px]"></div>
         <h1 className="text-3xl sm:text-5xl manrope font-[800] text-white text-center z-10 relative w-[50%]">
           Vision
         </h1>

@@ -1,16 +1,43 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import ReactMarkdown, { Components } from "react-markdown";
 import Prisma from "react-syntax-highlighter/dist/esm/prism";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import ReactPlayer from "react-player";
-import { ClipboardIcon, CheckBadgeIcon } from "@heroicons/react/24/outline";
+import {
+  ClipboardIcon,
+  CheckBadgeIcon,
+  PlayIcon,
+  PauseIcon,
+  SpeakerWaveIcon,
+} from "@heroicons/react/24/outline";
 
 const ForgeBlogs: React.FC = () => {
   const [markdown, setMarkdown] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(true);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [isMuted, setIsMuted] = useState(false);
+  const audioRef = useRef<HTMLAudioElement>(null);
+
+  const togglePlay = () => {
+    if (audioRef.current) {
+      if (isPlaying) {
+        audioRef.current.pause();
+      } else {
+        audioRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
+
+  const toggleMute = () => {
+    if (audioRef.current) {
+      audioRef.current.muted = !isMuted;
+      setIsMuted(!isMuted);
+    }
+  };
 
   useEffect(() => {
     const fetchMarkdown = async () => {
@@ -123,6 +150,44 @@ const ForgeBlogs: React.FC = () => {
 
   return (
     <div className="flex flex-col justify-start items-center min-h-screen text-white p-4">
+      <div className="w-full max-w-3xl mb-8 p-4 rounded-lg bg-black/40 border border-white/10 flex items-center justify-between">
+        <div>
+          <h3 className="font-bold text-lg text-white manrope">
+            Background Music
+          </h3>
+          <p className="text-white/60 text-sm">
+            Play this for crazy motivation while reading.
+          </p>
+        </div>
+        <div className="flex items-center gap-3">
+          <button
+            onClick={togglePlay}
+            className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+          >
+            {isPlaying ? (
+              <PauseIcon className="w-5 h-5 text-white" />
+            ) : (
+              <PlayIcon className="w-5 h-5 text-white" />
+            )}
+          </button>
+          <button
+            onClick={toggleMute}
+            className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+          >
+            <SpeakerWaveIcon
+              className={`w-5 h-5 ${isMuted ? "text-red-400" : "text-white"}`}
+            />
+          </button>
+        </div>
+      </div>
+      <audio
+        ref={audioRef}
+        src="https://cms-public-artifacts.artlist.io/content/music/aac/826957_Artem_Vyacheslavovich_Hramushkin_-_Tokyo_-_Taito_-_CE-000014-7_-_Master_-_88_Bpm_-_211222_-_BOV_-_ORG_-_2444.aac"
+        loop
+        onEnded={() => setIsPlaying(false)}
+        onPlay={() => setIsPlaying(true)}
+        onPause={() => setIsPlaying(false)}
+      />
       <div className="prose prose-invert prose-p:text-xl prose-h3:text-3xl prose-p:leading-relaxed prose-img:rounded-lg prose-img:shadow-lg prose-ul:text-white prose-li:text-white prose-li:text-lg max-w-3xl">
         <ReactMarkdown
           remarkPlugins={[remarkGfm]}
