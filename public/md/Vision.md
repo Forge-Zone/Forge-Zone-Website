@@ -9,6 +9,7 @@ So, if you want to dig into stuff like what we're gonna do what we're gonna do, 
 
 else. **TLDR**:
 
+- my story
 - vision to have a place where anyone can have a place to build
 - education space is a mess
 - rn we're focused on growing and providing value
@@ -17,7 +18,7 @@ else. **TLDR**:
 - we're not trying to be buildspace, we're trying to be forge zone
 - my dream
 
-if you don't know me I am [shrit](https://www.shrit.in/). founder of forge zone, if you don't know about forge zone then we're helping developers GTFOL (Get the f\*k of localhost) but why?
+if you don't know me I am [shrit](https://www.shrit.in/). founder of forge zone, if you don't know about forge zone then we're helping developers GTFOL (Get the f\*k of localhost), go the home page to learn more about us, but why?
 
 I've been into coding since I was [12](https://www.shrit.in/past).
 Back then, I wasn't chasing money or anything.
@@ -69,41 +70,35 @@ something like this, but this is an ideal condition, from what I have learned in
 anything can go wrong it can go something like
 
 ![https://i.postimg.cc/T29wPCFB/2.png](https://i.postimg.cc/T29wPCFB/2.png)
-lol honestly money if ofcourse a good motivating and measuring factor if we're doing well or not but honestly I just don't care, if I ever get funding I might give away 50% of the money to ppl to build more crazy shit
-
-what my plans are till now to make money is,
+tbh money’s def a good motivator and a way to measure if we’re doing well — but I don’t really care. even if I ever get funding, I might just throw 50% of it at ppl building wild shit, just to see what happens.
+my plan to make money till now is,
 
 1. **Sponsorships**: with more users joining in the dev tools market is going crazy with AI/ML, I think if we're able to get crazy amounts of connection this can be a ideal deal
 2. **Job Boards** something similar like Angellist
 
-we're brainstroming new ways to make money but yes this is it
+we're also brainstroming new ways to make money.
 also I see so many new founders building crazy products but are just doing so that they can get some funding and have a comfortable runaway
 
 nah I ain't like that I would rather sleep on footpath everyday while building instead of worrying to get investors for my runaway then live a lavish live of the funding
 I wanna actually build something which is valuable to ppl, and once I know it's valuable I am going to see if we really need funding or not
 
-btw we are also trying to grow our discord so do [join our discord server](https://discord.gg/e3RfmAVAXV)
+btw we are also trying to grow our discord so do [join our discord](https://discord.gg/e3RfmAVAXV)
 
 now shrit what about getting actual users in your platform?
-as I said I wanna work from ground up whatever I said, is a cummalative data of talking many ppl but I still feel like data is still very less, right now I need more proof that what we're doing with small builds actually something which ppl want![https://i.postimg.cc/PxmRH6fq/3.png](https://i.postimg.cc/PxmRH6fq/3.png)
-I am trying to connect with more ppl who knows to code and are in college dm me if you're one of them, hit me up
+like I said, I wanna build this from the ground up **everything** I’ve shared so far is just based on convos with a bunch of people, but honestly, that’s still not enough. I need more real proof that these small builds we’re doing are actually what people want.![https://i.postimg.cc/PxmRH6fq/3.png](https://i.postimg.cc/PxmRH6fq/3.png)
+I am trying to connect with more ppl who knows to code and are in college dm me if you're one of them
 
-I am so happy that finding early users as student is very easy and everyone are looking to actually try new shit (crazy stuff)
+tbh, finding early users as a student is such a cheat code, everyone’s down to try wild stuff, explore new ideas, and just vibe with it.
 
 but apart from it, I am bullish on going full organic until I find pmf, if you don't know what pmf is... in simple words it's just you verfying that your idea actually works, (usually do when your problem and solutions hits spot on), 95% startups fail here because they never found pmf
 
-i am just trying to get user know what forge zone is through YT and insta rn
-
+in the near future, planning to spread the word about forge zone through YT and insta,
 awesomee
-now i know it'll be very small ppl but if they see then my art style is very similar to buildspace, it's not just I am straight up trying to copy them but I am trying to reproduce that effect, buildspace is too big for us to kill, but we're trying to have that same effect of buildership, and I really think ppl in India really need to get in these things
 
-we're trying to be forge zone, and founder is simiply too obsessed with buildspace to let it go
-
-well if you're tryin to talk about the founder then I would just like to end my note with telling what my dream is
+I’ll wrap this up by sharing the dream of mine
 
 > **A home for the ones who build—apps, beats, dreams.** > **Not just tech, but anything true.** > **Come if you create. Stay if you care\***
 
 that'll be so cool, but rn I don't even have enough capital to rent a house, we have a long way to go, don't worry I am on it, we'll do it
 
-Shrit \n
-21 June 2025
+Shrit
