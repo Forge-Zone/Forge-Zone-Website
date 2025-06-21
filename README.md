@@ -25,11 +25,13 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 The application supports the following environment variables:
 
 - `DISABLE_PROTECTED_ROUTES`: Set to "true" to disable authentication checks for protected routes. Useful for development or testing.
+- `RESEND_API_KEY`: API key for Resend email service. Required for sending welcome emails to new users.
 
 To use this in development, you can add it to your `.env.local` file:
 
 ```
 DISABLE_PROTECTED_ROUTES=true
+RESEND_API_KEY=your_resend_api_key_here
 ```
 
 ## Learn More

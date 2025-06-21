@@ -176,17 +176,8 @@ const BuildInitalClient = ({ buildSlug }: { buildSlug: string }) => {
     return (
       <div className="mt-[5rem] h-screen flex items-center justify-center">
         <div className="text-center p-8 bg-blue-900/20 border border-blue-500/30 rounded-lg">
-          <h2 className="text-xl font-bold text-white mb-2">
-            Authentication Required
-          </h2>
-          <p className="text-white/70 mb-4">
-            Please login to access this build.
-          </p>
-          <Btn
-            title="Go to Login"
-            className="w-fit mx-auto"
-            onClick={() => (window.location.href = "/auth/start")}
-          />
+          <h2 className="text-xl font-bold text-white mb-2">Loading...</h2>
+          <p className="text-white/70 mb-4">Downloading build data...</p>
         </div>
       </div>
     );

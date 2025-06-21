@@ -5,6 +5,78 @@ import { getRandomProfilePicture } from "../utils";
 import { InternshipOrJob, UserType } from "@/types/user.types";
 import { SingleProject } from "@/types/project.types";
 
+async function sendWelcomeEmail(email: string, name?: string) {
+  try {
+    console.log(`Sending welcome email to: ${email}`);
+
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_NEXT_URL || "http://localhost:3000"}/api/send`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email,
+          name: name || email.split("@")[0],
+        }),
+      }
+    );
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      console.error("Failed to send welcome email:", errorText);
+      return false;
+    }
+
+    const result = await response.json();
+    console.log("Welcome email sent successfully:", result);
+    return true;
+  } catch (error) {
+    console.error("Error sending welcome email:", error);
+    return false;
+  }
+}
+
+async function createResendContact(
+  email: string,
+  firstName?: string,
+  lastName?: string
+) {
+  try {
+    console.log(`Creating Resend contact for: ${email}`);
+
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_NEXT_URL || "http://localhost:3000"}/api/send`,
+      {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email,
+          firstName: firstName || email.split("@")[0],
+          lastName: lastName || "",
+          unsubscribed: false,
+        }),
+      }
+    );
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      console.error("Failed to create Resend contact:", errorText);
+      return false;
+    }
+
+    const result = await response.json();
+    console.log("Resend contact created successfully:", result);
+    return true;
+  } catch (error) {
+    console.error("Error creating Resend contact:", error);
+    return false;
+  }
+}
+
 export async function createUser(user: User) {
   try {
     if (!user.email) {
@@ -33,6 +105,13 @@ export async function createUser(user: User) {
         projectsNum: 0,
       },
     });
+
+    // Send welcome email to new user
+    await sendWelcomeEmail(user.email, user.user_metadata?.name);
+
+    // Create contact in Resend
+    await createResendContact(user.email, user.user_metadata?.name);
+
     return res as unknown as UserType;
   } catch (error) {
     return null;
