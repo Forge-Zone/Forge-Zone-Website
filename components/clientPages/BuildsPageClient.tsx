@@ -45,7 +45,7 @@ const BuildsPageClient = () => {
 
   return (
     <div className="mt-[6rem] mx-auto max-w-7xl px-4 mb-10 ">
-      {user && profileCompletion < 75 && (
+      {profileCompletion != 0 && profileCompletion < 75 && (
         <div className="mb-8 bg-yellow-500/10 border border-yellow-500/20 rounded-lg p-4 flex items-center gap-3">
           <AlertCircle className="h-5 w-5 text-yellow-500" />
           <div>
